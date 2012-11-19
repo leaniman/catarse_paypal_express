@@ -19,7 +19,7 @@ module CatarsePaypalExpress
       protected
 
       def success_payment?(status)
-        status == 'PaymentActionCompleted'
+        status == 'PaymentActionCompleted' || 'PaymentActionNotInitiated'
       end
 
     end
